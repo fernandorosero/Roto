@@ -11,12 +11,16 @@ function Adelante(){
         success: function(response){
                 $('#salida').show('slow'); // muestra la salida (Distancia)
                 if(response == ''){
-                $('#salida h1').text("No devuelve datos adelante");
+                $('#salida h4').text("No devuelve datos adelante");
             }else{
-                $('#salida h1').text(response);
+                $('#salida h4').text(response);
             }// $("#medir").show('slow'); // Muestra el boton medir
                // $("#load-midiendo").hide('slow'); // oculta el load
                // $('#set-8 h1').text('Volver Medir'); // cambia de texto a "Volver a Medir"
+        },
+        error: function(){
+            $('#salida h4').show('slow');
+            $('#salida h4').text('ERROR');
         }
     }); // fin ajax
     //}); // fin click                
@@ -29,14 +33,14 @@ function Atras(){
         success: function(response){
             $('#salida').show('slow');
             if(response == ''){
-                $('#salida h1').text("No devuelve datos atras");
+                $('#salida h4').text("No devuelve datos atras");
             }else{
-                $('#salida h1').text(response);
+                $('#salida h4').text(response);
             }
         },
         error: function(){
-            $('#salida h1').show('slow');
-            $('#salida h1').text('ERROR');
+            $('#salida h4').show('slow');
+            $('#salida h4').text('ERROR');
         }
     });
 }
@@ -48,14 +52,14 @@ function Izquierda(){
         success: function(response){
             $('#salida').show('slow');
             if(response == ''){
-                $('#salida h1').text("No devuelve datos izq");
+                $('#salida h4').text("No devuelve datos izq");
             }else{
-                $('#salida h1').text(response);
+                $('#salida h4').text(response);
             }
         },
         error: function(){
-            $('#salida h1').show('slow');
-            $('#salida h1').text('ERROR');
+            $('#salida h4').show('slow');
+            $('#salida h4').text('ERROR');
         }
     });
 }
@@ -67,14 +71,14 @@ function Derecha(){
         success: function(response){
             $('#salida').show('slow');
             if(response == ''){
-                $('#salida h1').text('No devuelve datos derecha');
+                $('#salida h4').text('No devuelve datos derecha');
             }else{
-                $('#salida h1').text(response);
+                $('#salida h4').text(response);
             }
         },
         error: function(){
             $('#salida').show('slow');
-            $('#salida h1').text('ERROR');
+            $('#salida h4').text('ERROR');
         }
     });
 }
@@ -86,11 +90,15 @@ function Stop(){
         success: function(response){
             $('#salida').show('slow');
             if(response == ''){
-                $('#salida h1').text('No devuelve datos Stop')
+                $('#salida h4').text('No devuelve datos Stop')
             }else
             {
-                $('#salida h1').text(response);
+                $('#salida h4').text(response);
             }
+        },
+        error: function(){
+            $('#salida h4').show('slow');
+            $('#salida h4').text('ERROR');
         }
     });
 }

@@ -38,7 +38,7 @@ GPIO.output(IN3, GPIO.LOW)
 GPIO.output(IN2, GPIO.HIGH)
 GPIO.output(IN4, GPIO.HIGH)
 GPIO.output(ENA, True)
-GPIO.output(ENA, True)
+GPIO.output(ENB, True)
 time.sleep(tiempoAceleracion)
 
 GPIO.cleanup();

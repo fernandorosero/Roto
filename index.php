@@ -67,7 +67,7 @@ and open the template in the editor.
                  
                <!-- Contendor, que muestra la salida (Distancia)  -->
                 <div id="salida" style="display:none">Salida:
-                    <h1></h1>
+                    <h4></h4>
                 </div> 	
             </div>
         </div>
