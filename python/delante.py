@@ -32,7 +32,7 @@ GPIO.setup(IN4, GPIO.OUT)
 #GPIO.output(ENA, True)
 #GPIO.output(ENB, True)
 
-print "Delante";
+print "Adelante";
 GPIO.output(IN1, GPIO.LOW)
 GPIO.output(IN3, GPIO.LOW)
 GPIO.output(IN2, GPIO.HIGH)
