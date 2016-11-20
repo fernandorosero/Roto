@@ -41,11 +41,13 @@ and open the template in the editor.
                     </tr>
                         <tr>
                         <td>
-                            <button id="izquierda" class="btn btn-primary glyphicon glyphicon-arrow-left"
-                                    onclick="javascript:Izquierda();"/>
+                            <button class="btn btn-primary glyphicon glyphicon-arrow-left"
+                                    id="click-izquierda"
+                                    onclick="javascript:Izquierda();"
+                                    />
                         </td>
                         <td>
-                            <button id="stop" class="btn btn-danger glyphicon glyphicon-remove-sign"
+                            <button id="click-stop" class="btn btn-danger glyphicon glyphicon-remove-sign"
                                     onclick="javascript:Stop();"/>
                         </td>
                         <td>

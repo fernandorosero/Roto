@@ -67,7 +67,7 @@ function Derecha(){
         success: function(response){
             $('#salida').show('slow');
             if(response == ''){
-                $('#salida h1').text("No devuelve datos derecha");
+                $('#salida h1').text('No devuelve datos derecha');
             }else{
                 $('#salida h1').text(response);
             }
@@ -83,10 +83,14 @@ function Stop(){
     $.ajax({
         url:'php/stop.php',
         type:'POST',
-        
         success: function(response){
             $('#salida').show('slow');
-            $('#salida h1').text(response);
+            if(response == ''){
+                $('#salida h1').text('No devuelve datos Stop')
+            }else
+            {
+                $('#salida h1').text(response);
+            }
         }
     });
 }
