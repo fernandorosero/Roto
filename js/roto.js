@@ -54,7 +54,7 @@ function Izquierda(){
             }
         },
         error: function(){
-            $('#salida').show('slow');
+            $('#salida h1').show('slow');
             $('#salida h1').text('ERROR');
         }
     });
@@ -64,10 +64,17 @@ function Derecha(){
     $.ajax({
         url:'php/derecha.php',
         type:'POST',
-        
         success: function(response){
             $('#salida').show('slow');
-            $('#salida h1').text(response);
+            if(response == ''){
+                $('#salida h1').text("No devuelve datos derecha");
+            }else{
+                $('#salida h1').text(response);
+            }
+        },
+        error: function(){
+            $('#salida').show('slow');
+            $('#salida h1').text('ERROR');
         }
     });
 }
