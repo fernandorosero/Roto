@@ -11,12 +11,11 @@ and open the template in the editor.
         <!-- Estilos -->
         <link rel="stylesheet" type="text/css" href="css/estilos.css"/>
         <!-- JavaScript -->
-        <script type="text/javascript" src="//localhost/Detinec/view/js/util.js"></script> 
+        <script src="js/roto.js"></script>
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-        <script src="js/roto.js"></script>
 
     </head>
     <body>
@@ -24,7 +23,7 @@ and open the template in the editor.
             <div id="imagen">
                 <?php
                     echo'<p>Robot M&N</p>';
-                    echo '<img id="imagen" src="http://192.168.1.109:8001"/>';
+                    //echo '<img id="imagen" src="http://192.168.1.109:8001"/>';
                 ?>
             </div>
             <div id="mandoControl">
@@ -64,7 +63,10 @@ and open the template in the editor.
                     </tr>
                 </table>
                  
-                <div id="salida">Salida:</div>
+               <!-- Contendor, que muestra la salida (Distancia)  -->
+                <div id="salida" style="display:none">Salida:
+                    <h1></h1>
+                </div> 	
             </div>
         </div>
     </body>
