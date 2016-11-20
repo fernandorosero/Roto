@@ -10,8 +10,11 @@ function Adelante(){
         // Si todo sale bien
         success: function(response){
                 $('#salida').show('slow'); // muestra la salida (Distancia)
-                $('#salida #hh1').text(response); // muestra la salida (Distancia)
-               // $("#medir").show('slow'); // Muestra el boton medir
+                if(response == ''){
+                $('#salida h1').text("No devuelve datos adelante");
+            }else{
+                $('#salida h1').text(response);
+            }// $("#medir").show('slow'); // Muestra el boton medir
                // $("#load-midiendo").hide('slow'); // oculta el load
                // $('#set-8 h1').text('Volver Medir'); // cambia de texto a "Volver a Medir"
         }
@@ -26,13 +29,13 @@ function Atras(){
         success: function(response){
             $('#salida').show('slow');
             if(response == ''){
-                $('#salida').text("No devuelve datos atras");
+                $('#salida h1').text("No devuelve datos atras");
             }else{
                 $('#salida h1').text(response);
             }
         },
         error: function(){
-            $('#salida').show('slow');
+            $('#salida h1').show('slow');
             $('#salida h1').text('ERROR');
         }
     });
@@ -42,14 +45,17 @@ function Izquierda(){
     $.ajax({
         url:'php/izquierda.php',
         type:'POST',
-        
         success: function(response){
             $('#salida').show('slow');
             if(response == ''){
-                $('#salida').text("No devuelve datos  izquierda");
+                $('#salida h1').text("No devuelve datos izq");
             }else{
                 $('#salida h1').text(response);
             }
+        },
+        error: function(){
+            $('#salida').show('slow');
+            $('#salida h1').text('ERROR');
         }
     });
 }
