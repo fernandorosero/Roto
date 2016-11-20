@@ -30,7 +30,7 @@ GPIO.setup(IN4, GPIO.OUT)
 
 # Set ENA y ENB to high to enable stepper
 GPIO.output(ENA, True)
-GPIO.output(ENB, True)
+GPIO.output(ENB, False)
 
 print "Derecha";
 GPIO.output(IN1, GPIO.HIGH)
