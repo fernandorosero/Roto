@@ -29,16 +29,14 @@ GPIO.setup(IN3, GPIO.OUT)
 GPIO.setup(IN4, GPIO.OUT)
 
 # Set ENA y ENB to high to enable stepper
-#GPIO.output(ENA, True)
-#GPIO.output(ENB, True)
+GPIO.output(ENA, True)
+GPIO.output(ENB, True)
 
 print "Adelante";
 GPIO.output(IN1, GPIO.LOW)
 GPIO.output(IN3, GPIO.LOW)
 GPIO.output(IN2, GPIO.HIGH)
 GPIO.output(IN4, GPIO.HIGH)
-GPIO.output(ENA, True)
-GPIO.output(ENB, True)
 time.sleep(tiempoAceleracion)
 
 GPIO.cleanup();
