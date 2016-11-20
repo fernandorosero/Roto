@@ -42,24 +42,28 @@ and open the template in the editor.
                     </tr>
                         <tr>
                         <td>
-                            <button id="izquierda" class="btn btn-primary glyphicon glyphicon-arrow-left"/>
+                            <button id="izquierda" class="btn btn-primary glyphicon glyphicon-arrow-left"
+                                    onclick="javascript:Izquierda();"/>
                         </td>
                         <td>
-                            <button id="stop" class="btn btn-danger glyphicon glyphicon-remove-sign"/>
+                            <button id="stop" class="btn btn-danger glyphicon glyphicon-remove-sign"
+                                    onclick="javascript:Stop();"/>
                         </td>
                         <td>
-                            <button id="derecha" class="btn btn-primary glyphicon glyphicon-arrow-right"/>
+                            <button id="derecha" class="btn btn-primary glyphicon glyphicon-arrow-right"
+                                    onclick="javascript:Derecha();"/>
                         </td>
                     </tr>
                     <tr>
                         <td></td>
                         <td>
-                            <button id="atras" class="btn btn-success glyphicon glyphicon-arrow-down"/>
+                            <button id="atras" class="btn btn-success glyphicon glyphicon-arrow-down"
+                                    onclick="javascript:Atras();"/>
                         </td>
                         <td></td>
                     </tr>
                 </table>
-                 <a href="#Adelante-set-8" id="">Delante</a>
+                 
                 <div id="salida">Salida:</div>
             </div>
         </div>
