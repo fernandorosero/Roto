@@ -3,7 +3,7 @@ function Adelante(){
         // $("#medir").hide('slow'); // oculta el boton
         // $("#load-midiendo").show('slow'); // muestra el load (midiendo)
          //$('#salida').hide('slow'); // oculta la salida (si hay algo)
-   
+   alert("actualizado");
                             // petición ajax al servidor
         $.ajax({
                 url:'php/delante.php',
