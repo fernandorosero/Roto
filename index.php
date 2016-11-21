@@ -18,7 +18,7 @@
             <div id="imagen">
                 <?php
                     echo'<p>Robot M&N</p>';
-                    //echo '<img id="imagen" src="http://192.168.1.109:8001"/>';
+                    echo '<img id="imagen" src="http://192.168.1.109:8001"/>';
                 ?>
             </div>
             <div id="mandoControl">
