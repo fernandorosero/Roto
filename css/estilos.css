@@ -37,3 +37,6 @@ table td{
 h4{
     display: inline-block;
 }
+button{
+    outline: none;
+}
