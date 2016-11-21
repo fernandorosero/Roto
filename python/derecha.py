@@ -18,7 +18,7 @@ IN2 = 24  #GPIO-24
 IN3 = 4   #GPIO-4
 IN4 = 17  #GPIO-17
 
-tiempoAceleracion = 0.2;
+tiempoAceleracion = 0.6;
 
 # Set estado de los pines
 GPIO.setup(ENA, GPIO.OUT)
