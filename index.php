@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <meta charset="UTF-8">
@@ -32,7 +27,7 @@ and open the template in the editor.
                     <tr>
                         <td></td>
                         <td>
-                            <button class="btn btn-success glyphicon glyphicon-arrow-up"
+                            <button class="btn btn-success btn-lg glyphicon glyphicon-arrow-up"
                                     id="click-delante"
                                     onclick="javascript:Adelante();"
                                     />
@@ -41,24 +36,24 @@ and open the template in the editor.
                     </tr>
                         <tr>
                         <td>
-                            <button class="btn btn-primary glyphicon glyphicon-arrow-left"
+                            <button class="btn btn-primary btn-lg glyphicon glyphicon-arrow-left"
                                     id="click-izquierda"
                                     onclick="javascript:Izquierda();"
                                     />
                         </td>
                         <td>
-                            <button id="click-stop" class="btn btn-danger glyphicon glyphicon-remove-sign"
+                            <button id="click-stop" class="btn btn-danger btn-lg glyphicon glyphicon-remove-sign"
                                     onclick="javascript:Stop();"/>
                         </td>
                         <td>
-                            <button id="derecha" class="btn btn-primary glyphicon glyphicon-arrow-right"
+                            <button id="click-derecha" class="btn btn-primary btn-lg glyphicon glyphicon-arrow-right"
                                     onclick="javascript:Derecha();"/>
                         </td>
                     </tr>
                     <tr>
                         <td></td>
                         <td>
-                            <button id="atras" class="btn btn-success glyphicon glyphicon-arrow-down"
+                            <button id="click-atras" class="btn btn-success btn-lg glyphicon glyphicon-arrow-down"
                                     onclick="javascript:Atras();"/>
                         </td>
                         <td></td>
