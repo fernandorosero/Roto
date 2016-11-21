@@ -34,3 +34,6 @@ table{
 table td{
     padding: 3px;
 }
+h4{
+    display: inline-block;
+}
