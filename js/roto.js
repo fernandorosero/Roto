@@ -90,7 +90,7 @@ function Stop(){
         success: function(response){
             $('#salida').show('slow');
             if(response == ''){
-                $('#salida h4').text('No devuelve datos Stop')
+                $('#salida h4').text('No devuelve datos Stop');
             }else
             {
                 $('#salida h4').text(response);
@@ -103,5 +103,27 @@ function Stop(){
     });
 }
 
+//************* INICIO CAMARA WEB **************//
 
+function Web_up(){
+    $.ajax({
+       url:'php/web_up.php',
+       type:'POST',
+       success: function(response){
+           $('#salida').show('slow');
+           if(response == ''){
+            $('#salida h4').text('NO WEB CAM');
+           }
+           else{
+               $('#salida h4').text(response);
+           }
+       },
+       error: function(){
+           $('#salida h4').show('slow');
+           $('#salida h4').text('ERROR');
+       }
+    });
+}
+
+//************* FIN CAMARA WEB **++************//
 

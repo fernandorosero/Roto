@@ -16,10 +16,32 @@
     <body>
         <div id="cuerpo">
             <div id="imagen">
-                <?php
-                    echo'<p>Robot M&N</p>';
-                    echo '<img id="imagen" src="http://192.168.1.109:8001"/>';
-                ?>
+                <p>Robot M&N</p>
+                <table>
+                    <tr>
+                        <td></td>
+                        <td><button class="btn btn-warning"
+                                    onclick="javascript:Web_up();">Arriba</button></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn btn-warning"
+                                    onclick="javascript:Web_left();">Izq</button></td>
+                        <td>
+                        <?php
+                            echo '<img id="imagen" src="http://192.168.1.109:8001"/>';
+                        ?>
+                        </td>
+                        <td><button class="btn btn-warning"
+                                    onclick="javascript:Web_right();">Der</button></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button class="btn btn-warning"
+                                    onclick="javascript:Web_down();">Abajo</button></td>
+                        <td></td>
+                    </tr>
+                </table>
             </div>
             <div id="mandoControl">
                 <h3>Mando de Control</h3>
