@@ -1,5 +1,5 @@
 function Inicializacion(){
-    $('#servoUPDOWN').val('5.0');
+    $('#servoUPDOWN').val('2.5');
     $('#servoLR').val('7.5');
     var parametrosud = {
         "valorUPDOWN" : $('#servoUPDOWN').val()
