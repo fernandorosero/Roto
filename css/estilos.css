@@ -40,3 +40,6 @@ h4{
 button{
     outline: none;
 }
+#servoUPDOWN, #servoLR{
+    color: black;
+}

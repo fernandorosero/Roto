@@ -13,7 +13,7 @@
         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
     </head>
-    <body>
+    <body >
         <div id="cuerpo">
             <div id="imagen">
                 <p>Robot M&N</p>
@@ -29,7 +29,7 @@
                                     onclick="javascript:Web_left();">Izq</button></td>
                         <td>
                         <?php
-                            echo '<img id="imagen" src="http://192.168.1.109:8001"/>';
+                            //echo '<img id="imagen" src="http://192.168.1.109:8001"/>';
                         ?>
                         </td>
                         <td><button class="btn btn-warning"
@@ -44,6 +44,10 @@
                 </table>
             </div>
             <div id="mandoControl">
+                <div>
+                    <input type="text" id="servoUPDOWN" value="5.0"/>
+                    <input type="text" id="servoLR" value="7.5"
+                </div>
                 <h3>Mando de Control</h3>
                 <table>
                     <tr>

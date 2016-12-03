@@ -125,5 +125,66 @@ function Web_up(){
     });
 }
 
-//************* FIN CAMARA WEB **++************//
+function Web_down(){
+    $.ajax({
+       url:'php/web_down.php',
+       type:'POST',
+       success: function(response){
+           $('#salida').show('slow');
+           if(response == ''){
+            $('#salida h4').text('NO WEB CAM');
+           }
+           else{
+               $('#salida h4').text(response);
+           }
+       },
+       error: function(){
+           $('#salida h4').show('slow');
+           $('#salida h4').text('ERROR');
+       }
+    });
+}
+
+function Web_left(){
+    $.ajax({
+       url:'php/web_left.php',
+       type:'POST',
+       success: function(response){
+           $('#salida').show('slow');
+           if(response == ''){
+            $('#salida h4').text('NO WEB CAM');
+           }
+           else{
+               $('#salida h4').text(response);
+           }
+       },
+       error: function(){
+           $('#salida h4').show('slow');
+           $('#salida h4').text('ERROR');
+       }
+    });
+}
+
+function Web_right(){
+    $.ajax({
+       url:'php/web_right.php',
+       type:'POST',
+       success: function(response){
+           $('#salida').show('slow');
+           if(response == ''){
+            $('#salida h4').text('NO WEB CAM');
+           }
+           else{
+               $('#salida h4').text(response);
+           }
+       },
+       error: function(){
+           $('#salida h4').show('slow');
+           $('#salida h4').text('ERROR');
+       }
+    });
+}
+
+
+//************* FIN CAMARA WEB **************//
 
