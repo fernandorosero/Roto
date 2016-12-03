@@ -13,7 +13,7 @@
         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
     </head>
-    <body >
+    <body onload="javascript:Inicializacion();">
         <div id="cuerpo">
             <div id="imagen">
                 <p>Robot M&N</p>
@@ -49,8 +49,8 @@
             </div>
             <div id="mandoControl">
                 <div>
-                    <input type="text" id="servoUPDOWN" value="5.0"/>
-                    <input type="text" id="servoLR" value="7.5"
+                    <input type="text" id="servoUPDOWN" value=""/>
+                    <input type="text" id="servoLR" value=""
                 </div>
                 <h3>Mando de Control</h3>
                 <table>

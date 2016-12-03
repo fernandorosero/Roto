@@ -1,3 +1,31 @@
+function Inicializacion(){
+    $('#servoUPDOWN').val('5.0');
+    $('#servoLR').val('7.5');
+    var parametrosud = {
+        "valorUPDOWN" : $('#servoUPDOWN').val()
+    };
+    $.ajax({
+       data: parametrosud, 
+       url: 'php/web_updown.php',
+       type: 'POST',
+       success: function(){
+           
+       }
+    });
+    
+    var parametroslr = {
+        "valorLR" : $('#servoLR').val()
+    };
+    $.ajax({
+       data: parametroslr,
+       url: 'php/web_leftright.php',
+       type: 'POST',
+       success : function(){
+           
+       }
+    });
+}
+
 function Adelante(){
     //$('#click-delante').click(function(){
     // $("#medir").hide('slow'); // oculta el boton
