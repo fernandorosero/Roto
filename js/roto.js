@@ -106,6 +106,7 @@ function Stop(){
 //************* INICIO CAMARA WEB **************//
 
 function Web_up(){
+    alert("entra");
     $.ajax({
        url:'php/web_up.php',
        type:'POST',
