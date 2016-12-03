@@ -134,9 +134,8 @@ function Stop(){
 //************* INICIO CAMARA WEB **************//
 
 function Web_up(){
-    alert("entra");
     $.ajax({
-       url:'php/web_up.php',
+       url:'php/web_updown.php',
        type:'POST',
        success: function(response){
            $('#salida').show('slow');
@@ -156,7 +155,7 @@ function Web_up(){
 
 function Web_down(){
     $.ajax({
-       url:'php/web_down.php',
+       url:'php/web_updown.php',
        type:'POST',
        success: function(response){
            $('#salida').show('slow');
@@ -176,7 +175,7 @@ function Web_down(){
 
 function Web_left(){
     $.ajax({
-       url:'php/web_left.php',
+       url:'php/web_leftright.php',
        type:'POST',
        success: function(response){
            $('#salida').show('slow');
@@ -196,7 +195,7 @@ function Web_left(){
 
 function Web_right(){
     $.ajax({
-       url:'php/web_right.php',
+       url:'php/web_leftright.php',
        type:'POST',
        success: function(response){
            $('#salida').show('slow');
