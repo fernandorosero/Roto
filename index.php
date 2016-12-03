@@ -21,11 +21,13 @@
                     <tr>
                         <td></td>
                         <td><button class="btn btn-warning"
+                                    id="click-up"
                                     onclick="javascript:Web_up();">Arriba</button></td>
                         <td></td>
                     </tr>
                     <tr>
                         <td><button class="btn btn-warning"
+                                    id="click-left"
                                     onclick="javascript:Web_left();">Izq</button></td>
                         <td>
                         <?php
@@ -33,11 +35,13 @@
                         ?>
                         </td>
                         <td><button class="btn btn-warning"
+                                    id="click-right"
                                     onclick="javascript:Web_right();">Der</button></td>
                     </tr>
                     <tr>
                         <td></td>
                         <td><button class="btn btn-warning"
+                                    id="click-down"
                                     onclick="javascript:Web_down();">Abajo</button></td>
                         <td></td>
                     </tr>
