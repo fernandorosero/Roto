@@ -22,13 +22,13 @@
                         <td></td>
                         <td><button class="btn btn-warning"
                                     id="click-up"
-                                    onclick="javascript:Web_up();">Arriba</button></td>
+                                    onclick="javascript:CambiaUpDown(1);">Arriba</button></td>
                         <td></td>
                     </tr>
                     <tr>
                         <td><button class="btn btn-warning"
                                     id="click-left"
-                                    onclick="javascript:Web_left();">Izq</button></td>
+                                    onclick="javascript:CambiaLeftRight(-1);">Izq</button></td>
                         <td>
                         <?php
                             //echo '<img id="imagen" src="http://192.168.1.109:8001"/>';
@@ -36,13 +36,13 @@
                         </td>
                         <td><button class="btn btn-warning"
                                     id="click-right"
-                                    onclick="javascript:Web_right();">Der</button></td>
+                                    onclick="javascript:CambiaLeftRight(1);">Der</button></td>
                     </tr>
                     <tr>
                         <td></td>
                         <td><button class="btn btn-warning"
                                     id="click-down"
-                                    onclick="javascript:Web_down();">Abajo</button></td>
+                                    onclick="javascript:CambiaUpDown(-1);">Abajo</button></td>
                         <td></td>
                     </tr>
                 </table>

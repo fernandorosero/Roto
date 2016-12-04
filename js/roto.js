@@ -1,6 +1,6 @@
 function Inicializacion(){
     $('#servoUPDOWN').val('2.5');
-    $('#servoLR').val('7.5');
+    $('#servoLR').val('8.2');
     var parametrosud = {
         "valorUPDOWN" : $('#servoUPDOWN').val()
     };
@@ -132,9 +132,30 @@ function Stop(){
 }
 
 //************* INICIO CAMARA WEB **************//
+function CambiaUpDown(valor){
+    var valorUpDown = parseFloat($('#servoUPDOWN').val()) + parseFloat(valor); 
+    
+    if (valorUpDown >= 2.5 && valorUpDown <= 5.5){
+        $('#servoUPDOWN').val(valorUpDown);
+        Web_up();
+    }
+}
+
+function CambiaLeftRight(valor){
+    var valorLeftRight = parseFloat($('#servoLR').val()) + parseFloat(valor);
+    
+    if (valorLeftRight >= 3 && valorLeftRight <= 13){
+        $('#servoLR').val(valorLeftRight);
+        Web_left();
+    }
+}
 
 function Web_up(){
+    var parametroup = {
+        "valorUPDOWN" : $('#servoUPDOWN').val()
+    };
     $.ajax({
+       data: parametroup, 
        url:'php/web_updown.php',
        type:'POST',
        success: function(response){
@@ -174,7 +195,11 @@ function Web_down(){
 }
 
 function Web_left(){
+    var parametroleft = {
+        "valorUPLR" : $('#servoUPDOWN').val()
+    };
     $.ajax({
+       data: parametroleft,
        url:'php/web_leftright.php',
        type:'POST',
        success: function(response){
