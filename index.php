@@ -17,7 +17,7 @@
         <div id="cuerpo">
             <div id="imagen">
                 <p>Robot M&N</p>
-                <table>
+                <table id="uDlR">
                     <tr>
                         <td></td>
                         <td><button class="btn btn-warning"
@@ -31,7 +31,7 @@
                                     onclick="javascript:CambiaLeftRight(1);">Izq</button></td>
                         <td>
                         <?php
-                            //echo '<img id="imagen" src="http://192.168.1.109:8001"/>';
+                            echo '<img id="imagen" src="http://192.168.1.109:8001"/>';
                         ?>
                         </td>
                         <td><button class="btn btn-warning"
@@ -49,8 +49,8 @@
             </div>
             <div id="mandoControl">
                 <div>
-                    <input type="text" id="servoUPDOWN" value=""/>
-                    <input type="text" id="servoLR" value=""
+                    <input type="hidden" id="servoUPDOWN" value=""/>
+                    <input type="hidden" id="servoLR" value=""
                 </div>
                 <h3>Mando de Control</h3>
                 <table>
