@@ -195,8 +195,8 @@ function Web_down(){
 }
 
 function Web_left(){
-    var parametroleft = {
-        "valorLR" : $('#servoUPDOWN').val()
+    var parametroslr = {
+        "valorLR" : $('#servoLR').val()
     };
     $.ajax({
        data: parametroleft,
