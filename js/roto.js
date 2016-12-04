@@ -137,7 +137,7 @@ function CambiaUpDown(valor){
     
     if (valorUpDown >= 2.5 && valorUpDown <= 5.5){
         $('#servoUPDOWN').val(valorUpDown);
-        Web_up();
+        Web_UpDown();
     }
 }
 
@@ -146,11 +146,11 @@ function CambiaLeftRight(valor){
     
     if (valorLeftRight >= 3.1 && valorLeftRight <= 13.2){
         $('#servoLR').val(valorLeftRight);
-        Web_left();
+        Web_LeftRight();
     }
 }
 
-function Web_up(){
+function Web_UpDown(){
     var parametroup = {
         "valorUPDOWN" : $('#servoUPDOWN').val()
     };
@@ -174,27 +174,7 @@ function Web_up(){
     });
 }
 
-function Web_down(){
-    $.ajax({
-       url:'php/web_updown.php',
-       type:'POST',
-       success: function(response){
-           $('#salida').show('slow');
-           if(response == ''){
-            $('#salida h4').text('NO WEB CAM');
-           }
-           else{
-               $('#salida h4').text(response);
-           }
-       },
-       error: function(){
-           $('#salida h4').show('slow');
-           $('#salida h4').text('ERROR');
-       }
-    });
-}
-
-function Web_left(){
+function Web_LeftRight(){
     var parametroslr = {
         "valorLR" : $('#servoLR').val()
     };
@@ -217,27 +197,6 @@ function Web_left(){
        }
     });
 }
-
-function Web_right(){
-    $.ajax({
-       url:'php/web_leftright.php',
-       type:'POST',
-       success: function(response){
-           $('#salida').show('slow');
-           if(response == ''){
-            $('#salida h4').text('NO WEB CAM');
-           }
-           else{
-               $('#salida h4').text(response);
-           }
-       },
-       error: function(){
-           $('#salida h4').show('slow');
-           $('#salida h4').text('ERROR');
-       }
-    });
-}
-
 
 //************* FIN CAMARA WEB **************//
 
