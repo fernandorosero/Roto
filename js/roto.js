@@ -144,7 +144,7 @@ function CambiaUpDown(valor){
 function CambiaLeftRight(valor){
     var valorLeftRight = parseFloat($('#servoLR').val()) + parseFloat(valor);
     
-    if (valorLeftRight >= 3 && valorLeftRight <= 13){
+    if (valorLeftRight >= 3.1 && valorLeftRight <= 13.2){
         $('#servoLR').val(valorLeftRight);
         Web_left();
     }
@@ -196,7 +196,7 @@ function Web_down(){
 
 function Web_left(){
     var parametroleft = {
-        "valorUPLR" : $('#servoUPDOWN').val()
+        "valorLR" : $('#servoUPDOWN').val()
     };
     $.ajax({
        data: parametroleft,
