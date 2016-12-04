@@ -199,7 +199,7 @@ function Web_left(){
         "valorLR" : $('#servoLR').val()
     };
     $.ajax({
-       data: parametroleft,
+       data: parametroslr,
        url:'php/web_leftright.php',
        type:'POST',
        success: function(response){
