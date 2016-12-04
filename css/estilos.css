@@ -22,13 +22,16 @@ body{
 #imagen{
     margin-left: 5px;
     margin-right: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
     border-radius: 5px;
+    
 }
 p, h3{
     text-align: center;
 }
 table{
-    margin-left: 113px;
+    margin-left: 137px;
     margin-top: 15px;
     margin-bottom: 10px;
 }
