@@ -28,7 +28,7 @@
                     <tr>
                         <td><button class="btn btn-warning"
                                     id="click-left"
-                                    onclick="javascript:CambiaLeftRight(-1);">Izq</button></td>
+                                    onclick="javascript:CambiaLeftRight(1);">Izq</button></td>
                         <td>
                         <?php
                             //echo '<img id="imagen" src="http://192.168.1.109:8001"/>';
@@ -36,7 +36,7 @@
                         </td>
                         <td><button class="btn btn-warning"
                                     id="click-right"
-                                    onclick="javascript:CambiaLeftRight(1);">Der</button></td>
+                                    onclick="javascript:CambiaLeftRight(-1);">Der</button></td>
                     </tr>
                     <tr>
                         <td></td>
