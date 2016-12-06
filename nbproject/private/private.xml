@@ -4,23 +4,10 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/xampp/htdocs/roto/css/estilos.css</file>
-            <file>file:/C:/xampp/htdocs/roto/python/web_right.py</file>
-            <file>file:/C:/xampp/htdocs/roto/php/web_left.php</file>
             <file>file:/C:/xampp/htdocs/roto/python/atras.py</file>
             <file>file:/C:/xampp/htdocs/roto/index.php</file>
-            <file>file:/C:/xampp/htdocs/roto/python/web_down.py</file>
-            <file>file:/C:/xampp/htdocs/roto/python/delante.py</file>
-            <file>file:/C:/xampp/htdocs/roto/python/izquierda.py</file>
-            <file>file:/C:/xampp/htdocs/roto/php/web_right.php</file>
-            <file>file:/C:/xampp/htdocs/roto/php/web_updown.php</file>
-            <file>file:/C:/xampp/htdocs/roto/python/web_up.py</file>
-            <file>file:/C:/xampp/htdocs/roto/python/stop.py</file>
-            <file>file:/C:/xampp/htdocs/roto/python/web_left.py</file>
-            <file>file:/C:/xampp/htdocs/roto/js/roto.js</file>
-            <file>file:/C:/xampp/htdocs/roto/php/web_down.php</file>
-            <file>file:/C:/xampp/htdocs/roto/python/derecha.py</file>
-            <file>file:/C:/xampp/htdocs/roto/php/web_up.php</file>
-            <file>file:/C:/xampp/htdocs/roto/php/web_leftright.php</file>
+            <file>file:/C:/xampp/htdocs/roto/python/web_leftright.py</file>
+            <file>file:/C:/xampp/htdocs/roto/python/web_updown.py</file>
         </group>
     </open-files>
 </project-private>
