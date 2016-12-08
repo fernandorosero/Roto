@@ -11,7 +11,7 @@ GPIO.setmode(GPIO.BCM)
 
 TRIG = 23                                  #pin 23 como TRIG
 ECHO = 24                                  #pin 24 como ECHO
-V    = 34300			    			   # Velocidad del sonido 34300cm/s	
+V    = 34300			    	   # Velocidad del sonido 34300cm/s	
 
 print "Medicion de la distancia en curso"
 
