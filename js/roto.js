@@ -26,6 +26,16 @@ function Inicializacion(){
     });
 }
 
+function AutoRobotMR(){
+    $.ajax({
+        url:'php/autorobosonido.php',
+        type: 'POST',
+        success: function(response){
+            
+        }
+    });
+}
+
 function Adelante(){
     //$('#click-delante').click(function(){
     // $("#medir").hide('slow'); // oculta el boton

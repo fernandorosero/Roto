@@ -31,7 +31,7 @@
                                     onclick="javascript:CambiaLeftRight(1);">Izq</button></td>
                         <td>
                         <?php
-                            echo '<img id="imagen" src="http://192.168.1.109:8001"/>';
+                            //echo '<img id="imagen" src="http://192.168.1.109:8001"/>';
                         ?>
                         </td>
                         <td><button class="btn btn-warning"
@@ -89,7 +89,10 @@
                         <td></td>
                     </tr>
                 </table>
-                 
+                <div>
+                    <button id="click-automatico" class="btn btn-warning"
+                            onclick="javascript:AutoRobotMR();">Autom&aacute;tico - Ultrasonido</button>
+                </div> 
                <!-- Contendor, que muestra la salida (Distancia)  -->
                 <div id="salida" style="display:none">Salida:
                     <h4></h4>
