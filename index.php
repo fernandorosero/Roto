@@ -89,8 +89,8 @@
                         <td></td>
                     </tr>
                 </table>
-                <div>
-                    <button id="click-automatico" class="btn btn-warning"
+                <div id="botonAutomatico">
+                    <button id="click-automatico" class="btn btn-warning btn-lg"
                             onclick="javascript:AutoRobotMR();">Autom&aacute;tico - Ultrasonido</button>
                 </div> 
                <!-- Contendor, que muestra la salida (Distancia)  -->
