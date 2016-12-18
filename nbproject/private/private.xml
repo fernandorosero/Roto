@@ -3,15 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/Roto/python/atras.py</file>
-            <file>file:/C:/xampp/htdocs/Roto/python/autorobosoniddo.py</file>
-            <file>file:/C:/xampp/htdocs/Roto/php/delante.php</file>
-            <file>file:/C:/xampp/htdocs/Roto/python/web_updown.py</file>
-            <file>file:/C:/xampp/htdocs/Roto/index.php</file>
-            <file>file:/C:/xampp/htdocs/Roto/js/roto.js</file>
-            <file>file:/C:/xampp/htdocs/Roto/php/autorobosonido.php</file>
-            <file>file:/C:/xampp/htdocs/Roto/css/estilos.css</file>
-            <file>file:/C:/xampp/htdocs/Roto/python/web_leftright.py</file>
+            <file>file:/C:/xampp/htdocs/roto/php/web_updown.php</file>
+            <file>file:/C:/xampp/htdocs/roto/php/delante.php</file>
+            <file>file:/C:/xampp/htdocs/roto/js/roto.js</file>
+            <file>file:/C:/xampp/htdocs/roto/index.php</file>
+            <file>file:/C:/xampp/htdocs/roto/php/web_leftright.php</file>
         </group>
     </open-files>
 </project-private>
